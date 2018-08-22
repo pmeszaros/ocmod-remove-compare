@@ -1,0 +1,35 @@
+<modification>
+    <name>Remove compare buttons and links from template</name>
+    <version>1.0.1</version>
+    <link>https://github.com/pmeszaros/ocmod-remove-compare</link>
+    <author>Peter Meszaraos</author>
+    <code>remove_compare_from_template</code>
+	<file path="catalog/view/theme/default/template/extension/module/{bestseller,featured,latest,special}*.twig">
+		<operation>
+			<search><![CDATA[<button type="button" data-toggle="tooltip" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i></button>]]></search>		
+			<add position="replace"><![CDATA[]]></add>
+		</operation>
+	</file>
+	<file path="catalog/view/theme/default/template/product/category.twig">
+		<operation>
+			<search><![CDATA[<button type="button" data-toggle="tooltip" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i></button>]]></search>
+			<add position="replace"><![CDATA[]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[<div class="form-group"><a href="{{ compare }}" id="compare-total" class="btn btn-link">{{ text_compare }}</a></div>]]></search>
+			<add position="replace"><![CDATA[]]></add>
+		</operation>
+	</file>
+	<file path="catalog/view/theme/default/template/product/product.twig">
+		<operation>
+			<search><![CDATA[<button type="button" data-toggle="tooltip" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i></button>]]></search>
+			<add position="replace"><![CDATA[]]></add>
+		</operation>
+	</file>
+	<file path="catalog/view/theme/default/template/product/search.twig">
+		<operation>
+			<search><![CDATA[<button type="button" data-toggle="tooltip" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i></button>]]></search>
+			<add position="replace"><![CDATA[]]></add>
+		</operation>
+	</file>
+</modification>
