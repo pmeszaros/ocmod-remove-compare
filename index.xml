@@ -2,7 +2,7 @@
     <name>Remove compare buttons and links from template</name>
     <version>1.0.1</version>
     <link>https://github.com/pmeszaros/ocmod-remove-compare</link>
-    <author>Peter Meszaraos</author>
+    <author>Peter Meszaros</author>
     <code>remove_compare_from_template</code>
 	<file path="catalog/view/theme/default/template/extension/module/{bestseller,featured,latest,special}*.twig">
 		<operation>
